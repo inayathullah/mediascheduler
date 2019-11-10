@@ -1,0 +1,30 @@
+[{
+  "MediaName":"Lets work together",
+  "Duration": 30,
+  "NumberOfTimesToPlay": 20
+},
+  {
+    "MediaName":"Makeba",
+    "Duration": 45,
+    "NumberOfTimesToPlay": 15
+  },
+  {
+    "MediaName":"Connection",
+    "Duration": 55,
+    "NumberOfTimesToPlay": 40
+  },
+  {
+    "MediaName":"The Only Difference",
+    "Duration": 34,
+    "NumberOfTimesToPlay": 25
+  },
+  {
+    "MediaName":"Best day of my life",
+    "Duration": 23,
+    "NumberOfTimesToPlay": 10
+  },
+  {
+    "MediaName":"Beautiful thing",
+    "Duration": 65,
+    "NumberOfTimesToPlay": 55
+  }]
