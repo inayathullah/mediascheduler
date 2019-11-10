@@ -12,22 +12,22 @@ namespace zomoxo.mediascheduler
             try
             {
                 //Read input from user
-                //1. fromDate yyyy-MM-dd HH:mm:ss (2019-10-01 10:00:00)
-                //2. toDate yyyy-MM-dd HH:mm:ss (2019-10-01 10:30:00)
+                //1. From Time yyyy-MM-dd HH:mm:ss (2019-10-01 10:00:00)
+                //2. To Time   yyyy-MM-dd HH:mm:ss (2019-10-01 10:30:00)
                 
                 var mediaRepository = new MediaRepository();
                 
-                //Create request object based on the above user use Media.json from Media folder
-                //Create media object 
+                //Create request object based on the above user input then use Media.json from Media folder
+                //to create media object. Construct the below request using both the input
                 var request = new GenerateScheduleRequest();
                 
                 //Generate schedule
                 var schedule = mediaRepository.GenerateSchedule(new GenerateScheduleRequest());
 
-                //Write schedule as plain text file
+                //Write schedule as plain json file
                 var parsedSchedule = JsonConvert.SerializeObject(schedule);
-                var fileName = $"generatedschedule-{request.FromDate}";
-                System.IO.File.WriteAllText($@"c:\temp\{fileName}.txt", parsedSchedule);
+                var fileName = $"generated-schedule-{request.FromDate}";
+                System.IO.File.WriteAllText($@"c:\temp\{fileName}.json", parsedSchedule);
                 Console.WriteLine("Schedule Generated Successfully!");
             }
             catch (Exception e)

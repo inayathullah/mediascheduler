@@ -1,30 +1,36 @@
 [{
   "MediaName":"Lets work together",
   "Duration": 30,
-  "NumberOfTimesToPlay": 20
+  "NumberOfTimesToPlay": 20,
+  "Priority":1
 },
   {
     "MediaName":"Makeba",
     "Duration": 45,
-    "NumberOfTimesToPlay": 15
+    "NumberOfTimesToPlay": 15,
+    "Priority":3
   },
   {
     "MediaName":"Connection",
     "Duration": 55,
-    "NumberOfTimesToPlay": 40
+    "NumberOfTimesToPlay": 40,
+    "Priority":2
   },
   {
     "MediaName":"The Only Difference",
     "Duration": 34,
-    "NumberOfTimesToPlay": 25
+    "NumberOfTimesToPlay": 25,
+    "Priority":4
   },
   {
     "MediaName":"Best day of my life",
     "Duration": 23,
-    "NumberOfTimesToPlay": 10
+    "NumberOfTimesToPlay": 10,
+    "Priority":5
   },
   {
     "MediaName":"Beautiful thing",
     "Duration": 65,
-    "NumberOfTimesToPlay": 55
+    "NumberOfTimesToPlay": 55,
+    "Priority":6
   }]
